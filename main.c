@@ -23,7 +23,7 @@ int main() {
     if (systolic <= 0 || diastolic <= 0 || systolic < diastolic) {
         printf("Invalid Blood Pressure Reading\n");
         return 0;
-    }  */ // not working, you didn't specify in the assignment how to determine if the blood pressure reading is invalid or not
+    }  */ //
 
     // Determine blood pressure category with 2 decimal points
     printf("\n\n--------------------------------------------\n");
@@ -42,7 +42,7 @@ int main() {
         printf("High Blood Pressure (Hypertension) Stage 2\n");
     } else if (systolic >= 130 || diastolic >= 80) {
         printf("High Blood Pressure (Hypertension) Stage 1\n");
-    } else if (systolic >= 120 || diastolic >= 80) {
+    } else if (systolic >= 120 || diastolic <= 80) {
         printf("Elevated\n");
     } else {
         printf("Normal\n");
